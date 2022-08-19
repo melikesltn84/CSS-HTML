@@ -1,0 +1,26 @@
+.signup-title {
+  text-align: center;
+  font-size: 30px;
+  color: #2e4c6d;
+}
+.signup-form {
+  width: 500px;
+  margin: auto;
+}
+
+.signup-form label,
+.signup-form input:not([type="checkbox"]),/*not fonksiyonu aracılığıyla ben seçmiş olduğum elemanlardan yani burada tanımlamış olduğum selector haricindekileri seçmek istiyorum. >>>type ı checkbox olan bütün elemanları işin içerisinden çıkar demiş olduk*/
+.signup-form select {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+.signup-form input[type="checkbox"],
+.signup-form input[type="checkbox"] + label/*bu ifade checkbox ın altında ki label ı da dahil et demektir. '+' işareti ile ilk gelen label etiketini dahil ederiz*/ {
+  display: inline-block;
+  width: auto; /*tarayıcı varsayılanın verdiği width değeri*/
+}
+.signup-form button[type="submit"] {
+  display: block;
+  margin-top: 15px;
+}

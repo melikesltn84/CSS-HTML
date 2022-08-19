@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 2000px">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STICKY POSITIONING</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0%;
+    }
+
+    .navbar {
+      background-color: aqua;
+      border: 5px solid darkcyan;
+      width: 100%;
+      height: 50px;
+      margin-bottom: 5px;
+    }
+    .div1 {
+      /*margin-top: 55px;*/
+    }
+    .div2 {
+      /*position: absolute;*/ /*absolute dediğimizde bu kutu diğer kutuları görür ancak diğer kutular bunu görmez,mesela kutu2 kutu 1 i görür ama kutu3 kutu 2 yi görmeyip altına geçer*/
+      /*z-index: -1;*/ /*hangi kutunun üstte gözükmesini istiyorsak 1 veya -1 değeri vericez*/
+      /*position: fixed;*/ /*bunu yaptığımızda sayfayı ne kadar aşağı kaydırırsak kaydıralım top:0 olduğundan görünen sayfanın en üst sol köşesinde yer alır kutu 2*/
+      /*top: 0px;*/ /*şuan bu konumlandırmayı html ye göre yapıyor body ye göre değil*/
+      /*position: sticky;*/
+      /*top: 100px;*/
+      /*top: 0px;*/
+    }
+    h1 {
+      background-color: cadetblue;
+      position: sticky;
+      top: 0px;
+    }
+  </style>
+  <body>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt
+      sed laudantium. Dolorum temporibus consequatur esse magni laborum
+      blanditiis molestiae reiciendis? Placeat reiciendis, ipsum ad commodi
+      dicta maiores beatae asperiores. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Consequuntur cumque, molestias vitae fugiat non minima
+      rem quia iste itaque corrupti modi, sequi animi, suscipit blanditiis
+      explicabo. Quas cumque soluta tenetur?Lorem ipsum dolor, sit amet
+      consectetur adipisicing elit. Fuga, sint dolor quasi laudantium ullam
+      officiis, veniam adipisci fugiat officia ad magni cum. Exercitationem
+      fugiat iste soluta quas magni voluptate Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Distinctio, laudantium maiores veritatis
+      pariatur beatae sequi atque libero quibusdam repellendus impedit
+      aspernatur dolor fuga nihil soluta consectetur earum accusantium cumque
+      placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+      dolore iure pariatur, harum quidem cupiditate perferendis, dolor illum
+      natus consequuntur reprehenderit architecto dignissimos impedit velit est
+      voluptas libero reiciendis neque. Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Tempora deleniti numquam quibusdam veritatis rem
+      officiis in nihil aut nemo excepturi minima voluptatem reiciendis,
+      molestias labore mollitia, debitis ad nobis distinctio.
+    </p>
+    <h1>quasi ipsum inventore, quis quidem facere tempora non ipsa quia!</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quae in a,
+      debitis dolor quas unde molestiae! Impedit vel quam autem. Ratione aliquam
+      ex quas hic et tempore corrupti quos. Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Facilis esse ea laboriosam perferendis
+      reiciendis ut, eius, error beatae praesentium omnis nobis? Omnis inventore
+      deleniti non perferendis illum ratione temporibus eos. Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Ex adipisci aspernatur voluptates
+      fugiat doloremque consequuntur odit vel qui? Aliquid natus explicabo ab
+      dolorem non vero, obcaecati quis incidunt totam Lorem ipsum dolor sit
+      amet, consectetur adipisicing elit. Reiciendis iure praesentium in facilis
+      quidem sed consequuntur beatae quis illum reprehenderit porro, ducimus nam
+      molestias. Assumenda quam ipsam nihil nesciunt tenetur.
+    </p>
+
+    <div class="div1 navbar">KUTU 1</div>
+    <div class="div2 navbar">KUTU 2</div>
+    <div class="div3 navbar">KUTU 3</div>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio incidunt
+      sed laudantium. Dolorum temporibus consequatur esse magni laborum
+      blanditiis molestiae reiciendis? Placeat reiciendis, ipsum ad commodi
+      dicta maiores beatae asperiores. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Consequuntur cumque, molestias vitae fugiat non minima
+      rem quia iste itaque corrupti modi, sequi animi, suscipit blanditiis
+      explicabo. Quas cumque soluta tenetur?Lorem ipsum dolor, sit amet
+      consectetur adipisicing elit. Fuga, sint dolor quasi laudantium ullam
+      officiis, veniam adipisci fugiat officia ad magni cum. Exercitationem
+      fugiat iste soluta quas magni voluptate Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Distinctio, laudantium maiores veritatis
+      pariatur beatae sequi atque libero quibusdam repellendus impedit
+      aspernatur dolor fuga nihil soluta consectetur earum accusantium cumque
+      placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Doloribus dolorum doloremque sapiente sint quo tempore animi dolorem ipsa,
+      rem quisquam, corporis at. Error odit deserunt numquam unde dolores id
+      provident. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
+      assumenda aspernatur reiciendis quod sequi, nulla cupiditate doloremque
+      beatae eveniet! Velit
+    </p>
+    <h1>quasi ipsum inventore, quis quidem facere tempora non ipsa quia!</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quae in a,
+      debitis dolor quas unde molestiae! Impedit vel quam autem. Ratione aliquam
+      ex quas hic et tempore corrupti quos. Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Facilis esse ea laboriosam perferendis
+      reiciendis ut, eius, error beatae praesentium omnis nobis? Omnis inventore
+      deleniti non perferendis illum ratione temporibus eos. Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Animi dolore sed ipsum similique.
+      Natus ad sapiente quod earum, fugit, facilis modi voluptas nihil quo error
+      reprehenderit soluta iure, consequatur deleniti? Lorem, ipsum dolor sit
+      amet consectetur adipisicing elit. Nobis exercitationem cum sapiente
+      provident itaque illum atque, rem perspiciatis numquam? Dolore itaque
+      suscipit commodi voluptatibus eum aspernatur illo veritatis necessitatibus
+      perspiciatis? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      Quidem corrupti maxime alias repellat fugit illo impedit nemo quasi ullam
+      velit! Impedit assumenda ipsam nesciunt voluptate voluptatum quibusdam
+      obcaecati ad porro.
+    </p>
+  </body>
+</html>

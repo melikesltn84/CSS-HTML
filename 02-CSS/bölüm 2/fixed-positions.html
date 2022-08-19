@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 2000px">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSİTİONS (RELATİVE-ABSOLUTE)</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0%;
+    }
+
+    .navbar {
+      background-color: aqua;
+      border: 3px solid darkcyan;
+      width: 100%;
+      height: 50px;
+      margin-bottom: 5px;
+    }
+    .div1 {
+      margin-top: 55px;
+    }
+    .div2 {
+      /*position: absolute;*/ /*absolute dediğimizde bu kutu diğer kutuları görür ancak diğer kutular bunu görmez,mesela kutu2 kutu 1 i görür ama kutu3 kutu 2 yi görmeyip altına geçer*/
+      /*z-index: -1;*/ /*hangi kutunun üstte gözükmesini istiyorsak 1 veya -1 değeri vericez*/
+      position: fixed; /*bunu yaptığımızda sayfayı ne kadar aşağı kaydırırsak kaydıralım top:0 olduğundan görünen sayfanın en üst sol köşesinde yer alır kutu 2*/
+      top: 0px; /*şuan bu konumlandırmayı html ye göre yapıyor body ye göre değil*/
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="div1 navbar">KUTU 1</div>
+      <div class="div2 navbar">KUTU 2</div>
+      <div class="div3 navbar">KUTU 3</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS BÖLÜM 3 (BÖLÜM SONU UYGULAMASI)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merienda&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      /*font-family: "Special Elite", cursive;*/
+      font-family: "Architects Daughter", cursive;
+      /*font-family: 'Monoton', cursive;*/
+      /*font-family: 'Merienda', cursive;*/
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0%;
+      background-color: rgb(16, 1, 51);
+    }
+    header {
+      position: fixed;
+      width: 100%;
+      background-color: rgb(3, 3, 3);
+      color: white;
+      font-weight: bolder;
+      font-size: larger;
+    }
+    header a:hover {
+      box-shadow: rgb(242, 242, 243) 5px 5px 10px 10px;
+      transition: box-shadow 0.4s;
+    }
+    nav {
+      display: inline-block;
+      width: calc(100% - 8%);
+      text-align: right;
+    }
+    nav li {
+      display: inline-block;
+    }
+    nav ul {
+      margin: 1%; /*neden nav değil de ul ye margin verince işe yaradı???*/
+    }
+    header a {
+      color: white;
+      padding-left: 3px;
+      border: 3px solid white;
+      border-radius: 5px;
+    }
+    header a:hover {
+      background-color: white;
+      color: black;
+    }
+    /*nav li::before {
+      content: "/261B";
+      padding-left: 5px;
+    }*/
+    .welcome {
+      text-align: center;
+
+      color: white;
+      padding: 60px;
+      height: 750px;
+      width: 100%;
+      background-image: url("mask.jpg");
+      background-position: center left;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+    h1 {
+      background-color: rgb(3, 3, 3);
+      font-weight: bolder;
+      font-size: 50px;
+    }
+    .how-its {
+      background-color: rgb(0, 0, 0);
+      color: white;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+    }
+    .how-its div {
+      border: 5px solid white;
+      border-radius: 8px;
+      padding: 0px;
+      width: 500px;
+      height: min-content;
+      position: absolute;
+      bottom: 5px;
+      right: 0px;
+      transform: translate(-104%);
+    }
+    h2 {
+      color: rgb(224, 209, 209);
+    }
+
+    #container {
+      display: inline-block;
+      text-align: center;
+      width: calc(100% - 75%);
+      height: min-content;
+      padding: 0px 20px;
+      margin-top: 20px;
+      margin-left: 90px;
+      margin-bottom: 30px;
+    }
+    .div-one {
+      background-color: black;
+      color: white;
+      border: 3px solid rgb(226, 64, 64);
+      border-radius: 8px;
+      padding: 0px;
+    }
+    .div-two {
+      background-color: black;
+      color: white;
+      border: 3px solid rgb(38, 139, 206);
+      border-radius: 8px;
+      padding: 0px;
+      overflow: hidden; /*kutunun daha yukarıda ve ön planda olmasını sağlar*/
+      /*clear: both; float ile kaydırılan kutuların kenarları birbirine değer bunu önlemek için clear:both kullanılır*/
+    }
+    .div-one:hover {
+      box-shadow: rgb(238, 239, 240) 5px 5px 10px 10px;
+      transition: box-shadow 0.4s;
+    }
+
+    .div-two:hover {
+      box-shadow: rgb(238, 239, 240) 5px 5px 10px 10px;
+      transition: box-shadow 0.4s;
+    }
+
+    .div-three:hover {
+      box-shadow: rgb(238, 239, 240) 5px 5px 10px 10px;
+      transition: box-shadow 0.4s;
+    }
+    .div-three {
+      background-color: black;
+      color: white;
+      border: 3px solid rgb(139, 255, 22);
+      border-radius: 8px;
+      padding: 0px;
+    }
+
+    .section {
+      width: calc(100% - 50.4%);
+      height: 300px;
+      display: inline-block;
+      margin: 1px;
+      padding: 0px;
+    }
+    .hi-iam {
+      vertical-align: top;
+      padding: 30px;
+      padding-top: 20px;
+
+      font-size: 20px;
+      background-color: black;
+      color: white;
+    }
+    .div-image {
+      background-image: url("dark3.jpg");
+      background-size: 100%;
+
+      background-position: center;
+    }
+    .box {
+      display: inline-block;
+      width: calc(100% - 80%);
+      height: 200px;
+      margin-left: 110px;
+      margin-right: 60px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      background-color: black;
+      color: white;
+      border: 5px solid rgb(46, 10, 129);
+      border-radius: 8px;
+    }
+    .box:hover {
+      box-shadow: rgb(238, 239, 240) 5px 5px 10px 10px;
+      transition: box-shadow 0.4s;
+    }
+    .box-end ul {
+      list-style: none;
+    }
+    .box h3 {
+      padding-left: 60px;
+    }
+    .box li {
+      padding-left: 70px;
+    }
+    button {
+      margin-bottom: 10px;
+      border: 5px solid midnightblue;
+      border-radius: 10px;
+    }
+    button:hover {
+      background-color: black;
+      color: white;
+      box-shadow: rgb(238, 239, 240) 5px 5px 10px 10px;
+      transition: box-shadow 0.4s;
+    }
+    .how-its div:hover {
+      background-color: black;
+      color: white;
+      box-shadow: rgb(238, 239, 240) 5px 5px 10px 10px;
+      transition: box-shadow 0.4s;
+    }
+    .box-end {
+      position: relative;
+      margin-bottom: 40px;
+    }
+    .two {
+      position: relative;
+      bottom: 20px;
+    }
+    .one,
+    .three {
+      position: relative;
+    }
+    .message button {
+      position: fixed;
+      bottom: 0px;
+      right: 6px;
+      margin-bottom: 6px;
+    }
+    .scroll button {
+      bottom: 70px;
+      right: 6px;
+      margin-bottom: 6px;
+      scroll-behavior: smooth;
+    }
+    .div-one i {
+      padding-top: 10px;
+    }
+    .div-two i {
+      padding-top: 10px;
+    }
+    .div-three i {
+      padding-top: 10px;
+    }
+    .how-its i {
+      padding-top: 20px;
+    }
+    a {
+      text-decoration: none;
+    }
+  </style>
+  <body id="body">
+    <header>
+      <a class="movieapp" href="#">MovieApp</a>
+
+      <nav>
+        <ul>
+          <li>&#9755; <a class="li-element a-one" href="#"> Filmler</a></li>
+          <li>&#9755; <a class="li-element a-two" href="#"> Diziler</a></li>
+          <li>&#9762; <a class="li-element a-three" href="#"> Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="welcome">
+        <h1>Welcome To Here</h1>
+      </section>
+      <section class="how-its">
+        <div>
+          <i class="fa-solid fa-user-secret fa-2x"></i>
+          <h2>How It's Works?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            officia rem, consequatur enim est possimus eaque tempora, velit,
+            saepe maxime ex quisquam voluptates commodi! Cupiditate velit quidem
+            distinctio consequuntur nesciunt.
+          </p>
+        </div>
+      </section>
+      <section class="divs">
+        <div>
+          <div class="div-one" id="container">
+            <i class="fa-solid fa-cubes fa-2x"></i>
+            <h3>Register</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit
+              distinctio laborum optio quidem recusandae assumenda expedita,
+              consequuntur nihil corporis autem rem accusantium beatae, sapiente
+              laboriosam, dolorem modi iure a? Corporis?
+            </p>
+          </div>
+          <div class="div-two" id="container">
+            <i class="fa-solid fa-file-code fa-2x"></i>
+            <h3>Choose a Plan</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+              iusto beatae dolor atque! Excepturi repellendus repellat
+              aspernatur. Velit, consectetur cum accusantium voluptatem nulla
+              quidem veritatis odit quo distinctio quis unde!
+            </p>
+          </div>
+          <div class="div-three" id="container">
+            <i class="fa-solid fa-code fa-2x"></i>
+            <h3>Enjoy Movify</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid,
+              in fugiat a inventore libero perferendis veritatis modi expedita
+              aut magnam consequatur ad, quaerat suscipit quidem harum neque
+              quis delectus ipsa.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="div-end">
+        <div class="section div-image"></div>
+        <div class="section hi-iam">
+          <h3>&#9748; HI, I AM MELİKE ! ! ! &#9748;</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas
+            totam error voluptate illum cum voluptatum ad, harum aspernatur,
+            eligendi dolorum repudiandae nemo, repellendus autem in! Porro
+            sapiente consectetur obcaecati mollitia!
+          </p>
+          <button style="font-weight: bolder; font-size: x-large">
+            (: GO GO GO :)
+          </button>
+        </div>
+      </section>
+      <section class="box-end">
+        <div class="box one">
+          <h3><span style="font-size: 30px">&#128513;</span> Komedi</h3>
+          <ul>
+            <li>&#10122;A.R.O.G</li>
+            <li>&#10123;G.O.R.A</li>
+            <li>&#10124;Vizyontele</li>
+          </ul>
+        </div>
+        <div class="box two">
+          <h3><span style="font-size: 30px">&#9940;</span> Korku</h3>
+          <ul>
+            <li>&#10122;Halka</li>
+            <li>&#10123;Korku Evi</li>
+            <li>&#10124;Korku Seansı 1</li>
+          </ul>
+        </div>
+        <div class="box three">
+          <h3><span style="font-size: 30px">&#128301;</span> Bilim Kurgu</h3>
+          <ul>
+            <li>&#10122;DUNE</li>
+            <li>&#10123;Yenilmezler</li>
+            <li>&#10124;Matrix</li>
+          </ul>
+        </div>
+        <div class="message">
+          <button><span style="font-size: 30px">&#9993;</span></button>
+        </div>
+      </section>
+    </main>
+    <div class="message scroll">
+      <button style="font-size: 30px">
+        <a href="#body"><i class="far fa-hand-point-up"></i></a>
+      </button>
+    </div>
+  </body>
+</html>

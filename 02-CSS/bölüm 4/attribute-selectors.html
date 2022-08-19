@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*Attribute selector */
+      /* a[target] {
+        background-color: cadetblue;
+      }
+
+      /*burada a yı kaldırdığımızda class attr. tanımlanmış
+        bütün etiketler etkilenir*/
+      /*a*/
+      /*[class] {
+        background-color: chocolate;
+      } */
+
+      /*Attribute value selector */
+      /* [class="active"] {
+        background-color: chocolate;
+      } */
+
+      /*Attribute '*' selector */
+      /*[class*="active"]/*active kelemesini ilgili attribute içinde arayıp, eşleşenlerle css i uygular 'active' kelimesinin bitişik veya ayrı olması farketmez*/
+      /*{background-color: chocolate;
+      }*/
+
+      /*Attribute '~' selector */
+      /* [class~="active"]/*burada ise 'active' kelimesinin ayrı olması lazım*/
+      /*{
+        background-color: chocolate;
+      }
+      */
+
+      /*Attribute '|' selector*/ /*ilgili value bilgisi başlangıçta olacak seçilmesi için. active kelimesi ile başka kelime arasında boşluk varsa o etiketi seçmez. Boşluk kabul etmez*/
+      /* [class|="active"] {
+        background-color: aqua;
+      } */
+
+      /*Attribute '^' selector */ /* ararnan valuenin en başta olması gerekir seçilmesi için*/
+      /* [class^="active"] {
+        background-color: aqua;
+      } */
+
+      /* Attribute '$' selector */ /*aranan value nin en sonda olması gerekir etiketin seçilmesi için. Bu durumda da value başka bir value ile bitişik olabilir.*/
+      [class$="active"] {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="boy man-active">text</span>
+    <nav>
+      <a href="" target="_blank">Home</a>
+      <a href="" class="active">About</a>
+      <a href="" class="link">Contact</a>
+    </nav>
+  </body>
+</html>

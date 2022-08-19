@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MEDİA QERIES</title>
+    <style>
+      body {
+        background-color: aquamarine;
+      }
+
+      div {
+        color: rgb(0, 0, 0);
+        font-size: xx-large;
+        padding: auto;
+        display: none;
+      }
+
+      /* phone */
+      @media (max-width: 575px) {
+        #phone {
+          display: block;
+        }
+        /*burada yukarıda ki body etiketi geçerli*/
+      }
+
+      /* landscape */
+      @media (min-width: 576px) and (max-width: 767px) {
+        #landscape {
+          display: block;
+        }
+        body {
+          background-color: rgb(212, 229, 23);
+        }
+      }
+      /* tables */
+      @media (min-width: 768px) and (max-width: 991px) {
+        #tables {
+          display: block;
+        }
+        body {
+          background-color: rgb(50, 197, 197);
+        }
+      }
+
+      /* desktop */
+      @media (min-width: 992px) and (max-width: 1199px) {
+        #desktop {
+          display: block;
+        }
+        body {
+          background-color: rgb(140, 56, 209);
+        }
+      }
+      /* large desktop */
+      @media (min-width: 1200px) and (max-width: 1399px) {
+        #large-desktop {
+          display: block;
+        }
+        body {
+          background-color: rgb(202, 41, 119);
+        }
+      }
+
+      /* x-large dekstop */
+      @media (min-width: 1400px) {
+        #x-large-desktop {
+          display: block;
+        }
+        body {
+          background-color: rgb(221, 54, 54);
+        }
+      }
+
+      /*@media screen and (min-width: 900px) {
+        .logo {
+          width: 100px;
+        }
+      } /*Yukarıda ne yaptık.Dedik ki pencerenin boyutu 900px büyükse logonun yeni genişliği 100 px olsun.*/
+
+      /*@media screen and (max-width: 900px) {
+        .logo {
+          width: 50px;
+        }
+      } /*Burada ne yaptık derseniz.Pencere boyutu 900px ten küçükse logonun yeni genişliği 50 px olsun dedik.*/
+
+      /*@media screen and (min-width: 500px) and (max-width: 600px) {
+        .logo {
+          width: 25px;
+        }
+      } /*Burada ne yaptık.Pencere genişliği 500pxten büyük ve 600px den küçükse logonun genişliği 25px olsun dedik.
+      Bu şekilde tablet-akıllı telefon ve pc genişliklerini belirleyip.Ona göre tasarımları ayarlayıp gösterebiliriz.*/
+    </style>
+  </head>
+  <body>
+    <div id="phone">Phone</div>
+    <div id="landscape">Landschape</div>
+    <div id="tables">Tablet</div>
+    <div id="desktop">Laptop</div>
+    <div id="large-desktop">Masaüstü PC</div>
+    <div id="x-large-desktop">LCD TV</div>
+  </body>
+</html>

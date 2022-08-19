@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRATİK 18 (NAVBAR)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: "Bungee", cursive;
+        font-size: large;
+      }
+      html {
+        height: 1000px;
+      }
+      body {
+        margin: 0px;
+      }
+      .main-header {
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+      }
+      #main-a {
+        color: aliceblue;
+      }
+
+      .main-nav {
+        display: inline-block;
+        width: calc(100% - 10%);
+        text-align: right;
+      }
+      .main-ul {
+        list-style: none;
+
+        padding: 0px;
+        margin: 0px;
+      }
+      .main-li {
+        display: inline-block;
+        padding-left: 8px;
+      }
+      .main-li a {
+        color: aliceblue;
+      }
+      .welcome {
+        position: relative;
+        background-color: rgb(56, 54, 54);
+        height: 600px;
+        width: 100%;
+        padding: 5px;
+      }
+
+      main h1 {
+        position: absolute;
+
+        top: 300px;
+        left: 800px;
+        transform: translate(-50%, -80%);
+        margin-top: 80px;
+        background-color: black;
+        color: aliceblue;
+      }
+      .how-its {
+        background-color: rgb(56, 54, 54);
+        padding: 5px;
+      }
+      .how-its h2 {
+        background-color: black;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <a id="main-a" href="#">MovieApp</a>
+      <nav class="main-nav">
+        <ul class="main-ul">
+          <li class="main-li"><a href="#">Filmler</a></li>
+          <li class="main-li"><a href="#">Diziler</a></li>
+          <li class="main-li"><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="welcome">
+        <h1>Welcome To Turkey!!!</h1>
+      </section>
+      <section class="how-its">
+        <h2>How Its Works?</h2>
+      </section>
+    </main>
+  </body>
+</html>

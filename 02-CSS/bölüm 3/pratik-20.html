@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRATİK 20 (PSEUDO-ELEMENTS)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .about::first-line {
+      color: crimson;
+      font-size: xx-large;
+      font-weight: bolder;
+      font-family: "Oooh Baby", cursive;
+    }
+    p::first-letter {
+      font-size: xx-large;
+    }
+    p::selection {
+      background-color: darkgoldenrod;
+    }
+    p::after {
+      content: "\1F50A \1F4E9";
+      color: blue;
+      font-size: x-large;
+    }
+  </style>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus,
+      quaerat beatae officiis repudiandae deleniti ullam ut placeat ipsum hic
+      iure sit. Veniam eius modi quam facere. Neque atque aperiam unde. Lorem
+      ipsum dolor sit amet consectetur adipisicing elit. Quod aspernatur
+      blanditiis consequatur voluptate natus commodi porro dolorum earum unde!
+      Vero, facere ut eveniet explicabo quaerat omnis natus quidem non animi.
+    </p>
+
+    <p class="about">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos reiciendis
+      at sit aliquam adipisci aperiam? Iste ipsa dolorem non illum, inventore
+      aliquid quidem ut, veritatis asperiores labore architecto amet placeat!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex
+      officiis vero? Esse, blanditiis omnis cumque assumenda at quasi quaerat
+      qui vero totam obcaecati eum numquam, laborum et fugiat id.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+/*.btn {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 7px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition-duration: 0.5s;
+}
+
+.btn-primary {
+  background: burlywood;
+  color: rgb(0, 4, 255);
+  border: 3px solid black;
+}
+
+.btn-primary:hover {
+  background: white;
+  color: chartreuse;
+  border: 3px solid black;
+}
+
+.btn-outline-primary {
+  background: white;
+  color: chartreuse;
+  border: 3px solid black;
+}
+
+.btn-outline-primary:hover {
+  background: chartreuse;
+  color: white;
+  border: 3px solid black;
+}
+
+.btn-secondary {
+  background: burlywood;
+  color: rgb(0, 4, 255);
+  border: 3px solid black;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: chartreuse;
+  border: 3px solid black;
+}
+
+.btn-outline-secondary {
+  background: white;
+  color: chartreuse;
+  border: 3px solid black;
+}
+
+.btn-outline-secondary:hover {
+  background: chartreuse;
+  color: white;
+  border: 3px solid black;
+}*/
+* {
+  box-sizing: border-box;
+  font-family: "Grape Nuts", cursive;
+}
+body {
+  margin: 0;
+}
+.main-header div {
+  background-color: rgb(30, 30, 47);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.main-header nav {
+  display: inline-block;
+  width: 50%;
+}
+.main-header li {
+  display: inline-block;
+  padding-right: 8px;
+}
+.main-header ul {
+  /*float: right;*/
+  margin: 10px;
+  text-align: right;
+}
+.main-header a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 25px;
+  font-weight: 600;
+}
+.main-header a:hover {
+  color: rgb(163, 119, 204);
+}
+.main-one {
+  padding-top: 50px;
+  content: "";
+  display: block;
+  clear: both;
+}
+.div-2 {
+  background: url("../img/pexels-anni-roenkae.jpg");
+  height: 80vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+  font-size: xx-large;
+  background-attachment: fixed;
+
+  position: relative;
+}
+/*.div-2::after {
+  content: "";
+  display: block;
+  clear: both;
+}*/ /*buna gerek kalmadı*/
+.section-one {
+  background-color: rgba(138, 43, 226, 0.5);
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section-one h1,
+p {
+  text-align: center;
+}
+
+.section-two {
+  font-size: x-large;
+  margin: 50px 50px;
+}
+.main-header {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.main-two::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.one {
+  background: url("../img/pexels-motional-studio.jpg");
+  background-position: top center;
+  background-size: cover;
+  width: 50%;
+  height: 400px;
+  float: left;
+}
+.two {
+  font-size: x-large;
+  width: 50%;
+  height: 400px;
+  float: right;
+  background-color: rgb(134, 132, 195);
+  padding: 80px 40px;
+  color: rgb(245, 245, 255);
+}
+
+.clearfix::after {
+  /*2. Yöntem: bu şekilde yaparak görünmeyen bir elemanı ekliyoruz ve float ın bozduğu akışı düzeltiyoruz*/
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix {
+  width: 100%;
+}
+
+.down {
+  /* display: block;*/
+  float: right;
+  width: 33.3%;
+
+  height: 300px;
+
+  margin-top: 70px;
+  position: relative;
+}
+.down-up {
+  width: 70%;
+  height: 300px;
+  background-color: rgb(57, 57, 168);
+  color: aliceblue;
+  text-align: center;
+  border-radius: 10px;
+  padding: 0px 100px;
+  font-size: x-large;
+  position: absolute;
+  right: 15%;
+  font-size: xx-large;
+}
+
+.clearfix ul {
+  list-style: none;
+}
+.clearfix {
+  position: relative;
+  margin-bottom: 150px;
+  margin-top: 100px;
+}
+.div-h2 {
+  position: absolute;
+  top: 0;
+  right: 40%;
+
+  color: rgb(57, 57, 168);
+}
+.div-3 {
+  text-align: center;
+}
+.div-end {
+  background-color: rgb(5, 5, 38);
+
+  width: 100%;
+}
+.div-end::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.end {
+  float: right;
+  padding: 20px;
+  width: 33%;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  color: aliceblue;
+}

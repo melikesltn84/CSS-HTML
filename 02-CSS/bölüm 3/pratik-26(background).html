@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRATİK 26 (BACKGROUND)</title>
+  </head>
+  <style>
+    /* html,
+    body {
+      height: 100%;
+    }*/
+    body {
+      margin: 0%;
+    }
+    #header {
+      background-image: linear-gradient(
+          to bottom,
+
+          rgba(186, 148, 255, 0.7),
+          rgba(0, 0, 0, 0.7)
+        ),
+        url("joker2.png");
+      background-size: 100%;
+      background-position: top;
+      height: 100vh;
+      width: 100vw;
+      position: relative;
+    }
+    #header h2 {
+      margin: 0%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 100px;
+    }
+    .joker-icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 80px;
+      height: 80px;
+    }
+  </style>
+  <body>
+    <div id="header">
+      <h2>
+        <span style="color: rgb(0, 0, 0)">Back</span
+        ><span style="color: rgb(83, 49, 163)">ground</span>
+        <span style="color: rgb(161, 97, 1)">Text</span>
+      </h2>
+      <img class="joker-icon" src="joker-icon.jpg" />
+    </div>
+  </body>
+</html>

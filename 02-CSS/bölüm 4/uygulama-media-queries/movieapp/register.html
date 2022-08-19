@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UYGULAMA FORM</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+  </head>
+  <body id="body">
+    <header class="main-header">
+      <div class="container">
+        <a href="#" class="main-header__logo">MovieApp</a>
+        <nav class="main-nav">
+          <ul class="main-nav__items">
+            <li class="main-nav__item">
+              <a class="btn btn-secondary" href="#">Filmler</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="btn btn-secondary" href="#">Diziler</a>
+            </li>
+            <li class="main-nav__item main-nav__item--login">
+              <a class="btn btn-secondary" href="#">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="signup-page">
+      <h1 class="signup-title">Create Your Account</h1>
+      <form action="" class="signup-form">
+        <label for="firstname">First Name</label>
+        <!-- <label> etiketi <input> etiketi için bir başlık tanımlar. <label> etiketi tarayıcılarda özel bir şekilde gösterilmez. Label etiketine tıklandığında giriş alanındaki kontrol değişir, kullanıcılar için kolaylık sağlar. <label> etiketinin for özelliği ile <input> etiketinin id özellikleri eşitlenmelidir. -->
+        <input type="text" id="firstname" />
+        <!-- <input> etiketi kullanıcının veri girişi yapabileceği giriş alanı tanımlar. <input> etiketi <form> etiketi içerisinde kullanılır. Giriş alanları, type özelliğine bağlı olarak çeşitli şekillerde olabilir. >>>label a tıkladığımızda input focus olacak bu sebeple label ı hangi input ile eşleştirdiğimiz önemli. >>>Type özelliği giriş alanının görüntelenme türünü belirtir.Varsayılan değer "text"'dir -->
+
+        <!-- <input type=”password” /> şifre girişi alanı tanımlar.///
+        <input type=”submit” /> form verilerini sunucuya göndermek için düğme-buton tanımlar. ///Gönder düğmesine basıldığında verinin nereye gideceği <form> etiketi action özelliği ile belirlenir. /// <input type=”reset” /> tıklandığında tüm değerleri varsayılan yapan sıfırlama düğmesi-butonu tanımlar.-->
+        <!-- <form action="iletisim.php"> 
+            Adı:<br />
+            <input type="text" name="adi" /><br />
+            Soyadı:<br />
+            <input type="text" name="soyadi" /><br /><br />
+            <input type="submit" value="Gönder" />
+          </form>-->
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" />
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" />
+
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option value="">Select</option>
+          <option value="">Woman</option>
+          <option value="">Man</option>
+        </select>
+        <!-- Temel yapısı bu şekildedir.Select ile bir seçim listesi yapacaz diyoruz ve optionla liste elemanlarını giriyoruz.Bu özelliği formlar içinde kullanıp veri alabiliyoruz.Select yapısında her hangi birini seç demessek en baştaki elemanı seçecektir.Özellikle birinizi seçmesini istiyosak optionlardan istediğimize selected parametresi vermeliyiz.
+        <!DOCTYPE HTML>
+          <html lang="en-US">
+          <head>
+            <meta charset="UTF-8">
+            <title>UstaDerslik</title>
+          </head>
+          <body>
+          <select name="dersler">
+            <option>css</option>
+            <option>html</option>
+            <option>php</option>
+            <option selected>javascript</option>
+            <option>jquery</option>
+          </select>
+          </body>
+          </html> -->
+        <!--name bilgisi backend de lazım yani server tabanlı bir kod yazdığımız da gerekli olacak -->
+        <input type="checkbox" id="agree-terms" />
+        <label for="agree-terms"
+          >Agree to <a href="#">Terms &amp; Conditions</a>
+          <!--&amp;'&' karekter kodu demektir-->
+        </label>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+    </main>
+
+    <footer>
+      <!-- Projenin ana kısmı olamayıp sadece projeyle ilgili detay bilgi olacağı için main içinde section oluşturmadık ve bu şekilde yaptık -->
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <ul id="footer-links">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Forum</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <ul class="social-links">
+              <li><a href="" class="fab fa-facebook"></a></li>
+              <li><a href="" class="fab fa-twitter"></a></li>
+              <li><a href="" class="fab fa-instagram"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#body" id="backtotop">
+      <i class="fas fa-chevron-circle-up"></i>
+    </a>
+  </body>
+</html>

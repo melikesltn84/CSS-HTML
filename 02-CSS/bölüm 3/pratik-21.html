@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRATİK 21 (STYLING-LINKS)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Moo Lah Lah", cursive;
+      color: rgb(137, 206, 33);
+    }
+    html {
+      height: 1000px;
+    }
+    body {
+      margin: 0%;
+    }
+    header {
+      background-color: rgb(0, 0, 0);
+      display: inline-block;
+      width: 100%;
+      position: fixed;
+    }
+    nav {
+      display: inline-block;
+      width: calc(100% - 7%);
+      text-align: right;
+    }
+    ul {
+      margin: 0px; /*margin in 0px olması sayesinde header kısmı daha ince oldu*/
+      padding: 5px;
+    }
+    li {
+      display: inline-block;
+      padding-left: 8px;
+    }
+    a {
+      text-decoration: none;
+      border: 3px solid rgb(137, 206, 33);
+      border-radius: 5px;
+    }
+    a:hover {
+      background-color: aliceblue;
+      color: black;
+      border-color: black;
+    }
+    main {
+      padding-top: 30px;
+    }
+    .welcome {
+      height: 600px;
+      background-color: black;
+      border: 5px solid aliceblue;
+      padding: 5px;
+    }
+    .again {
+      height: 150px;
+
+      border: 5px solid aliceblue;
+
+      position: relative;
+    }
+    h2 {
+      position: absolute;
+      margin: 0px;
+      top: 0px;
+      right: 0px;
+      transform: translate(-700px, 50px);
+    }
+    h1,
+    h2 {
+      background-color: aliceblue;
+
+      color: black;
+      border: 5px solid rgb(0, 0, 0);
+      border-radius: 5px;
+    }
+  </style>
+  <body>
+    <header>
+      <a href="#">MOVIEAPP</a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Filmler</a>
+          </li>
+          <li>
+            <a href="#">Diziler</a>
+          </li>
+          <li>
+            <a href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="welcome">
+        <h1>Merhaba Hoş Geldiniz :)</h1>
+      </section>
+      <section class="again">
+        <h2>Tekrar Bekleriz :)</h2>
+      </section>
+    </main>
+  </body>
+</html>

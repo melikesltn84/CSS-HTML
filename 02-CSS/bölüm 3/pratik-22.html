@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRATİK 22 (STYLING-LIST)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gurajada&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Wallpoet&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://css.gg/coffee.css" rel="stylesheet" />
+  </head>
+  <style>
+    * {
+      font-family: "Gurajada", serif;
+      box-sizing: border-box;
+      font-size: 30px;
+    }
+    body {
+      margin: 0%;
+    }
+    header {
+      background-color: coral;
+    }
+    nav {
+      display: inline-block;
+      text-align: right;
+      width: calc(100% - 6%);
+    }
+    li {
+      display: inline-block;
+      padding-left: 8px;
+    }
+    ul {
+      margin: 0px;
+      padding: 0px;
+    }
+    a {
+      color: aliceblue;
+      text-decoration: none;
+    }
+    .name {
+      height: 500px;
+      padding: 5px;
+    }
+    .nice {
+      height: 120px;
+      padding: 5px;
+    }
+
+    h2 {
+      background-color: rgb(167, 95, 95);
+      color: aliceblue;
+    }
+    main {
+      background-color: coral;
+      position: relative;
+    }
+    h1 {
+      color: aliceblue;
+      text-align: center;
+      left: 630px;
+      top: 230px;
+      position: absolute;
+      font-family: "Wallpoet", cursive;
+      font-size: larger;
+    }
+    .gg-coffee {
+      /*box-sizing: border-box;*/
+      position: relative;
+      left: 780px;
+      top: 180px;
+      /*display: block;*/
+      /*transform: scale(var(--ggs, 1));*/
+      width: 50px;
+      height: 35px;
+      border: 3px solid;
+      border-radius: 6px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      margin-left: -4px;
+      margin-top: 3px;
+    }
+  </style>
+  <body>
+    <header>
+      <a href="#">MovieApp</a>
+      <nav>
+        <ul>
+          <li class="home"><a href="#">Home</a></li>
+          <li class="movies"><a href="#">Movies</a></li>
+          <li class="contact"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="name">
+        <i class="gg-coffee"></i>
+        <h1>My Name Is Melike</h1>
+      </section>
+      <section class="nice">
+        <h2>Nice To Meet You</h2>
+      </section>
+    </main>
+  </body>
+</html>

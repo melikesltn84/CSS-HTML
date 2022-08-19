@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BACKGROUND-POSITION</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    /*html,
+        body {
+          height: 100%;
+        }*/
+    #header {
+      background-color: #000;
+      position: relative;
+      background-image: /*linear-gradient(
+          to bottom left,
+          rgba(179, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),*/ url("joker.jpg");
+
+      /*background-color: rgb(
+            235,
+            227,
+            227
+          );*/ /*arka plan rengi vermemizin nedeni yüklenen resmin boyutu büyük olduğundan her bilgisayar hemen yüklemek resmi resim yüklenen kadar bir arka plan rengi gözükmesi daha şık olur*/
+      /*background-image: 600px 700px, cover; */ /*şeklinde olursa verilen oranlara göre resmi düzenler ve sığdırmaya çalışır*/
+      background-size: contain; /*contain de resim en boy oranına göre korunur*/ /*100%;*/ /*istersek 100px width 100px height değeri de verebiliriz*/
+      background-position: /*80% 10%*/ center;
+      background-repeat: no-repeat;
+      /*height: 50%;*/ /*kapsayıcı etiketi olan body e yükseklik vermediğimiz için #header gözükmez*/
+      /*height: 100%;*/
+      /*height: 50vh;*/ /*html ve body nin heigth nı 100% yapmak ve sonra #header i 50% yapmakla eş değerdir.*/
+      height: 100vh; /*height değerini azaltır ve background-size ı contain yaparsak bulunduğu çerçeve sınırları içersinde resmin boyutunu korur. Cover yaparsak resmi çerçeve içerisine tam olarak yerleştirir.*/
+      /*width: 80vw;*/ /*mevcut port genişliğinin % 80 ini kaplar arkaplan resmi*/
+      /*width: 100vw;*/
+    }
+    body {
+      margin: 0%;
+    }
+    #header h1 {
+      font-weight: bolder;
+      font-family: "Slabo 27px", serif;
+      margin: 0%; /* margin değerini 0 yapmamızın nedeni h1 etiketinin kendine ait marginin olması ve bu sebeple üstten boşluk bırakması */
+
+      font-size: 30px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .one {
+      font-family: "Slabo 27px", serif;
+      font-weight: bolder;
+      margin: 0%;
+      font-size: 20px;
+      position: absolute;
+      top: 7%;
+      left: 3%;
+    }
+    .two {
+      font-family: "Slabo 27px", serif;
+      font-weight: bolder;
+      margin: 0%;
+      font-size: 20px;
+      position: absolute;
+      top: 80%;
+      left: 65%;
+    }
+
+    .joker2 {
+      position: absolute;
+      bottom: 5px;
+      left: 5px;
+      width: 80px;
+      height: 80px;
+    }
+  </style>
+  <body>
+    <!--body nin de kapsayıcı etiketi html e yükseklik vermediğimiz için yine #header gözükmez -->
+    <div id="header">
+      <h1>
+        <span style="color: rgb(146, 5, 5)">Hayat seni </span
+        ><span style="color: green">güldürmüyorsa espriyi</span>
+        <span style="color: rgb(255, 255, 255)">anlamadın demektir...</span>
+      </h1>
+      <h2 class="one">
+        <span style="color: rgb(146, 5, 5)">Delilik yer çekimi</span>
+        <span style="color: green"> gibidir; sadece hafi</span
+        ><span style="color: rgb(251, 253, 255)">fçe itmek yeterlidir.</span>
+      </h2>
+
+      <h2 class="two">
+        <span style="color: rgb(146, 5, 5)"
+          >Planı olan bir adam gibi mi duruyorum?Benim ne olduğumu biliyor</span
+        >
+        <span style="color: green"
+          >musun? Ben arabaları kovalayan köpek gibiyim. Eğer yakalasam</span
+        >
+        <span style="color: rgb(255, 255, 255)"
+          >bile ne yapacağımı bilemem. Ben sadece yaparım.</span
+        >
+      </h2>
+      <img class="joker2" src="joker-icon-final.jpg" alt="" />
+    </div>
+    <!-- <div class="opacity"></div> -->
+  </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRATİK 19 (PSEUDO-CLASSES)</title>
+  </head>
+  <style>
+    a {
+      color: black;
+      border: 4px solid darkblue;
+      text-align: center;
+      text-decoration: none;
+      background-color: aliceblue;
+      padding: 8px;
+      display: inline-block;
+      width: 70px;
+      margin: 10px;
+    }
+    div {
+      color: deeppink;
+    }
+    div p {
+      color: seagreen;
+    }
+    /*bu pseudo-classes'ların sırası oldukça önemli, sıra bozulursa çalışmazlar*/
+    a:link {
+      /*var olan tarayıcı ziyaret edildiğinde renk yeşile döner ve öylede kalır. Ancak sistemimizde kayıtlı olmayan bir tarayıcı adresi girdiğimizde böyle bir sayfa olmadığından örneğin pratik-171.html gibi, linkin rengi kırmızı kalmaya devam eder*/
+      color: rgb(255, 0, 0);
+    }
+    a:visited {
+      /*eğer var olan bir tarayıcı ziyaret edilirse pratik-17.html gibi, visited rengi olan yeşil halini alır*/
+      color: rgb(93, 9, 172);
+    }
+    a:hover {
+      color: azure;
+      background-color: blue;
+    }
+    a:active {
+      /*sekmenin üzerine bir kere tıkladığımızda buradaki renkleri alır, tıklamaz sadece üzerine glirsek yukarıda ki hover renklerini alır*/
+      color: rgb(102, 190, 14);
+      background-color: cornflowerblue;
+    }
+    div:hover p {
+      display: block;
+      background-color: aquamarine;
+    }
+    p {
+      display: none;
+    }
+  </style>
+  <body>
+    <a href="pratik-171.html">Filmler</a>
+    <a href="pratik-161.html">Diziler</a>
+    <a href="pratik-151.html">Belgeseller</a>
+    <br /><br />
+    <div>
+      click here!!
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+        laboriosam ut fuga, ea, accusantium ratione nobis, esse quos consequatur
+        impedit rerum cupiditate nulla animi maiores temporibus nemo autem
+        veritatis. Nobis?
+      </p>
+    </div>
+  </body>
+</html>

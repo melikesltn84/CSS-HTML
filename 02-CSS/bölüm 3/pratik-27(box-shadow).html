@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRATİK 27 (BOX SHADOW)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    * {
+      font-family: "Special Elite", cursive;
+
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-image: url("adam-kopek.jpg");
+      background-size: 100%;
+      background-position: center;
+      height: 100vh;
+      margin: 0%;
+    }
+    header {
+      position: fixed;
+      width: 100%;
+    }
+
+    nav {
+      display: inline-block;
+      width: calc(100% - 6%);
+      text-align: right;
+    }
+    ul {
+      list-style: none;
+      margin: 4px;
+    }
+    header a {
+      text-decoration: none;
+      /* text-shadow: 2px -2px 3px rgb(245, 234, 234);  */ /*kelimeler de gölgelendirme yapar*/
+      color: rgb(163, 193, 219);
+    }
+
+    nav li {
+      display: inline-block;
+      padding-left: 5px;
+    }
+
+    .main-two {
+      position: relative;
+      width: 100%;
+      height: 300px;
+    }
+
+    .two {
+      color: rgb(163, 193, 219);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      height: 200px;
+      text-align: center;
+      border: 5px solid rgb(94, 94, 199);
+      border-radius: 10px;
+    }
+    .two:hover {
+      background-image: linear-gradient(
+        to bottom,
+        rgb(20, 0, 51),
+        rgb(163, 102, 255)
+      );
+      border-color: rgb(61, 0, 153);
+    }
+    .three {
+      color: rgb(163, 193, 219);
+      width: 100%;
+      height: 435px;
+    }
+    .three button {
+      margin-left: 30px;
+      margin-bottom: 10px;
+      padding: 2px;
+      border: 3px solid rgb(163, 193, 219);
+      border-radius: 8px;
+      color: rgb(163, 193, 219);
+      background-color: rgb(61, 0, 153);
+    }
+    .three div {
+      display: inline-block;
+      width: 200px;
+      height: 170px;
+      margin-left: 230px;
+      /*box-shadow: rgb(199, 207, 214) 10px 20px 30px -10px;*/
+      transition: box-shadow 0.6s;
+
+      border-color: rgb(61, 0, 153);
+      vertical-align: top;
+      border: 5px solid rgb(94, 94, 199);
+      border-radius: 10px;
+    }
+    .three div:hover {
+      background-image: linear-gradient(
+        to bottom,
+        rgb(20, 0, 51),
+        rgb(163, 102, 255)
+      );
+      border-color: rgb(61, 0, 153);
+      box-shadow: rgb(199, 207, 214) 10px 20px 30px -10px;
+    }
+
+    .three h4 {
+      margin-left: 43px;
+    }
+    .three li {
+      padding-top: 3px;
+    }
+    .four {
+      color: rgb(163, 193, 219);
+      height: 200px;
+    }
+    .four div {
+      display: inline-block;
+    }
+    .four .image {
+      width: 49.69%;
+      height: 200px;
+      background-image: url("women-face.jpg");
+      background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+    .four .biyografi {
+      background-image: url("women-colorful.jpg");
+      background-position: center;
+      background-size: 100%;
+      padding: 10px;
+      vertical-align: top;
+      width: 50%;
+      height: 200px;
+      text-align: left;
+      color: rgb(1, 1, 24);
+    }
+    .one {
+      background-image: url("adam-kopek.jpg");
+      background-position: top;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      position: relative;
+      background-color: rgb(1, 1, 24);
+      padding: 2px;
+      width: 100%;
+      height: 50px;
+    }
+    .one h1 {
+      color: rgb(163, 193, 219);
+      text-align: center;
+      position: absolute;
+      bottom: 8px;
+      left: 700px;
+      margin: 0%;
+    }
+    .one a {
+      position: fixed;
+      bottom: 2px;
+      right: 4px;
+    }
+    li:hover {
+      color: aliceblue;
+      padding-top: 0;
+    }
+  </style>
+  <body id="body">
+    <header>
+      <a class="header-a" href="#">MovieApp</a>
+      <nav>
+        <ul>
+          <li><a class="header-a" href="#">Filmler</a></li>
+          <li><a class="header-a" href="#">Diziler</a></li>
+          <li><a class="header-a" href="#">LogIn</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main-two">
+        <section class="two">
+          <h2>How About You?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+            possimus mollitia corrupti pariatur velit, molestiae tempore
+            veritatis quae inventore, sed suscipit atque perspiciatis. Eaque
+            nisi minus voluptatibus corrupti! Modi, minus.
+          </p>
+        </section>
+      </section>
+
+      <section class="three">
+        <div class="animasyon">
+          <h4>Animasyon</h4>
+          <ul>
+            <li>Shrek</li>
+
+            <li>Madagaskar</li>
+
+            <li>Buz Devri</li>
+          </ul>
+          <button>Click Here</button>
+        </div>
+        <div class="korku">
+          <h4>Korku</h4>
+          <ul>
+            <li>Halka</li>
+            <li>Aziz</li>
+            <li>Işıklar</li>
+          </ul>
+          <button>Click Here</button>
+        </div>
+        <div class="fantastik">
+          <h4>Fantastik</h4>
+          <ul>
+            <li>Yüzükler</li>
+
+            <li>Harry</li>
+
+            <li>Hobbit</li>
+          </ul>
+          <button>Click Here</button>
+        </div>
+      </section>
+
+      <section class="four">
+        <div class="image"></div>
+
+        <div class="biyografi">
+          <h3>Hi, I am Melike</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            doloribus delectus debitis explicabo dolor temporibus voluptas
+            aliquam dolorum. Repudiandae, at quo. Debitis ullam nihil possimus
+            accusantium dignissimos molestiae? Quod, voluptates.
+          </p>
+        </div>
+      </section>
+      <section class="one">
+        <h1>SEE YOU !!!</h1>
+        <a href="#body"
+          ><i
+            style="color: rgb(163, 193, 219)"
+            class="fa-solid fa-angles-up fa-2x"
+          ></i
+        ></a>
+      </section>
+    </main>
+  </body>
+</html>

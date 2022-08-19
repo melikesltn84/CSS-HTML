@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EM REM UNITS</title>
+    <style>
+      /* #kutu-1 {
+        font-size: 20px;
+      }*/
+      /* #kutu-1 p {
+        font-size: 1.5em;
+        padding: 1em; /*20px olması için 1em verdik ancak kapsayıcı elemanı olan kutu-1 id li
+        div e bakmadı en yakın olan kutu-1 p deki font-size bilgisi olan 1.5em ye bakarak 30px lik padding değeri oluştu.*/
+      /* }*/
+
+      /*#kutu-1 p {
+        font-size: 2rem; /*bu şekilde değer verdiğimizde bu sefer kapsayıcı
+         eleman olarak div i değil html i (yani root u) baz alır ve 16x2 den 32px lik bir font-size değeri alır.*/
+      /*}
+      #kutu-1 h2 {
+        font-size: 3rem;
+      }*/
+
+      html {
+        font-size: 62.5%; /*=10px;*/ /*yaparsak direk kutu-1 p font-size ı 20px #kutu-1 h2 si 30px 
+        font-size değeri alır.Çünkü varsayılan değer olan 16px yerine 10px değer verdik*/ /*kullanıcı yazını boyutunu büyütmek veya 
+        küçültmek isterse, bunu yapabilmek için verdiğimiz sabit değerin yüzde cinsini font size olarak yazmalıyız*/
+      }
+      body {
+        font-size: 1.5rem; /*dersek html nin 10px ine göre body etiketi font-size nı ayarlar yani 16px font-size olur*/
+      }
+      @media (min-width: 576px) {
+        html {
+          font-size: 11px;
+        }
+        #kutu-1 h2 {
+          font-size: 1.8rem;
+        }
+      }
+
+      @media (min-width: 768px) {
+        html {
+          font-size: 12px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="kutu-1">
+      <h2>Lorem, ipsum dolor.</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, voluptas
+        in laboriosam veniam ratione voluptates, sapiente deleniti fuga nulla
+        quod vitae ut cupiditate fugiat quasi ullam nostrum doloremque, quis
+        molestias.
+      </p>
+    </div>
+
+    <div id="kutu-2">
+      <h3>Lorem, ipsum dolor.</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        ipsum beatae sit ut asperiores odit, repudiandae quo ad ipsam suscipit
+        iure dolores minima aperiam, soluta error molestias! Rerum, soluta quae.
+      </p>
+    </div>
+  </body>
+</html>
